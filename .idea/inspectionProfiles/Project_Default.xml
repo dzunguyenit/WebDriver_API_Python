@@ -1,0 +1,13 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="WebDriver_API.OOP_Inheritance.OOP_in" />
+          <option value="WebDriver_API.OOP_Inheritance.OOP_Inheritance" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
