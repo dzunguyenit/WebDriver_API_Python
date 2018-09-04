@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
-import time
 
 driver = webdriver.Chrome("E:\Python WebDriver\Ex1\WebdriverAPI\Driver\chromedriver.exe")
 driver.get("http://www.myntra.com/")

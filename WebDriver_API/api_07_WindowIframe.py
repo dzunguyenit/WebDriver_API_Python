@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 
 driver = webdriver.Chrome("E:\Python WebDriver\Ex1\WebdriverAPI\Driver\chromedriver.exe")
 driver.get("http://www.hdfcbank.com/")
