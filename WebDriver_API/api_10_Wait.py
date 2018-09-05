@@ -1,15 +1,9 @@
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.by import By
+from WebDriver_API.abstractPage import commonFunction
 
-driver = webdriver.Chrome("E:\Python WebDriver\Ex1\WebdriverAPI\Driver\chromedriver.exe")
-driver.get("http://the-internet.herokuapp.com/dynamic_loading/2")
-driver.maximize_window()
+common = commonFunction()
+common.openurl("http://the-internet.herokuapp.com/dynamic_loading/2")
+common.clickToElement("//button[contains(text(),'Start')]")
+common.waitForControlVisible("//h4[contains(text(),'Hello World!')]")
+assert "Hello World!" in common.getTextElement("//h4[contains(text(),'Hello World!')]")
+common.quitBrowser()
 
-wait = WebDriverWait(driver, 30)
-driver.find_element_by_xpath("//button[contains(text(),'Start')]").click()
-wait.until(expected_conditions.visibility_of_element_located((By.XPATH, "//h4[contains(text(),'Hello World!')]")))
-textHello = driver.find_element_by_xpath("//h4[contains(text(),'Hello World!')]").text
-assert "Hello World!" in textHello
-driver.quit()

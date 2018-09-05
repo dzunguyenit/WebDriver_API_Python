@@ -1,16 +1,8 @@
-from selenium import webdriver
-from selenium.webdriver import ActionChains
+from WebDriver_API.abstractPage import commonFunction
 
-driver = webdriver.Chrome("E:\Python WebDriver\Ex1\WebdriverAPI\Driver\chromedriver.exe")
-driver.get("http://www.myntra.com/")
-driver.maximize_window()
-
-infoPersional = driver.find_element_by_xpath("//div[@class='desktop-userIconsContainer']")
-action = ActionChains(driver)
-action.move_to_element(infoPersional).perform()
-
-btnlogin = driver.find_element_by_xpath("//a[contains(text(),'login')]")
-action = ActionChains(driver)
-action.move_to_element(btnlogin).click().perform()
-
-driver.quit()
+common = commonFunction()
+common.openurl("http://www.myntra.com/")
+common.hoverMouse("//div[@class='desktop-userIconsContainer']")
+common.hoverMouse("//a[contains(text(),'login')]")
+common.clickToElement("//a[contains(text(),'login')]")
+common.quitBrowser()
