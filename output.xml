@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180908 21:35:47.034" generator="Robot 3.0.4 (Python 2.7.10 on win32)">
+<robot generated="20180909 16:37:14.471" generator="Robot 3.0.4 (Python 2.7.10 on win32)">
 <suite source="E:\Python WebDriver\Project Git API_WebDriver\Robot_Framework\DemoRobot_Ex1.robot" id="s1" name="DemoRobot Ex1">
 <kw type="setup" name="Open Home Page">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,10 +8,10 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180908 21:35:47.174" level="INFO">Opening browser 'Chrome' to base url 'http://blazedemo.com/'.</msg>
-<status status="PASS" endtime="20180908 21:35:53.437" starttime="20180908 21:35:47.174"></status>
+<msg timestamp="20180909 16:37:18.965" level="INFO">Opening browser 'Chrome' to base url 'http://blazedemo.com/'.</msg>
+<status status="PASS" endtime="20180909 16:37:27.505" starttime="20180909 16:37:18.965"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:53.437" starttime="20180908 21:35:47.174"></status>
+<status status="PASS" endtime="20180909 16:37:27.505" starttime="20180909 16:37:18.965"></status>
 </kw>
 <test id="s1-t1" name="The user can search for flights">
 <kw name="Select Departure City">
@@ -24,10 +24,10 @@
 <arg>xpath://select[@name='fromPort']</arg>
 <arg>${departure_city}</arg>
 </arguments>
-<msg timestamp="20180908 21:35:53.440" level="INFO">Selecting options from selection list 'xpath://select[@name='fromPort']' by value Paris.</msg>
-<status status="PASS" endtime="20180908 21:35:53.531" starttime="20180908 21:35:53.440"></status>
+<msg timestamp="20180909 16:37:27.509" level="INFO">Selecting options from selection list 'xpath://select[@name='fromPort']' by value Paris.</msg>
+<status status="PASS" endtime="20180909 16:37:27.594" starttime="20180909 16:37:27.507"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:53.531" starttime="20180908 21:35:53.440"></status>
+<status status="PASS" endtime="20180909 16:37:27.594" starttime="20180909 16:37:27.507"></status>
 </kw>
 <kw name="Select Destination City">
 <arguments>
@@ -39,10 +39,10 @@
 <arg>xpath://select[@name='toPort']</arg>
 <arg>${destination_city}</arg>
 </arguments>
-<msg timestamp="20180908 21:35:53.533" level="INFO">Selecting options from selection list 'xpath://select[@name='toPort']' by value London.</msg>
-<status status="PASS" endtime="20180908 21:35:53.677" starttime="20180908 21:35:53.532"></status>
+<msg timestamp="20180909 16:37:27.596" level="INFO">Selecting options from selection list 'xpath://select[@name='toPort']' by value London.</msg>
+<status status="PASS" endtime="20180909 16:37:27.737" starttime="20180909 16:37:27.596"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:53.677" starttime="20180908 21:35:53.532"></status>
+<status status="PASS" endtime="20180909 16:37:27.737" starttime="20180909 16:37:27.595"></status>
 </kw>
 <kw name="Search For Flights">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -50,10 +50,10 @@
 <arguments>
 <arg>css:input[type='submit']</arg>
 </arguments>
-<msg timestamp="20180908 21:35:53.680" level="INFO">Clicking button 'css:input[type='submit']'.</msg>
-<status status="PASS" endtime="20180908 21:35:54.219" starttime="20180908 21:35:53.679"></status>
+<msg timestamp="20180909 16:37:27.737" level="INFO">Clicking button 'css:input[type='submit']'.</msg>
+<status status="PASS" endtime="20180909 16:37:28.314" starttime="20180909 16:37:27.737"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:54.219" starttime="20180908 21:35:53.678"></status>
+<status status="PASS" endtime="20180909 16:37:28.314" starttime="20180909 16:37:27.737"></status>
 </kw>
 <kw name="There are available Flights">
 <kw name="Get WebElements" library="SeleniumLibrary">
@@ -64,29 +64,29 @@
 <assign>
 <var>@{flights}</var>
 </assign>
-<msg timestamp="20180908 21:35:54.246" level="INFO">@{flights} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9cfc1f0346adb62112472c0183e7e7ed", element="0.13460866501672064-1")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="9cfc1f034...</msg>
-<status status="PASS" endtime="20180908 21:35:54.246" starttime="20180908 21:35:54.220"></status>
+<msg timestamp="20180909 16:37:28.344" level="INFO">@{flights} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="97c5d34ceec5ec069d7370b97a2d0f91", element="0.5416900302984367-1")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="97c5d34cee...</msg>
+<status status="PASS" endtime="20180909 16:37:28.344" starttime="20180909 16:37:28.317"></status>
 </kw>
 <kw name="Should Not Be Empty" library="BuiltIn">
 <doc>Verifies that the given item is not empty.</doc>
 <arguments>
 <arg>${flights}</arg>
 </arguments>
-<msg timestamp="20180908 21:35:54.247" level="INFO">Length is 5</msg>
-<status status="PASS" endtime="20180908 21:35:54.247" starttime="20180908 21:35:54.247"></status>
+<msg timestamp="20180909 16:37:28.345" level="INFO">Length is 5</msg>
+<status status="PASS" endtime="20180909 16:37:28.345" starttime="20180909 16:37:28.344"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:54.248" starttime="20180908 21:35:54.219"></status>
+<status status="PASS" endtime="20180909 16:37:28.345" starttime="20180909 16:37:28.314"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:54.249" critical="yes" starttime="20180908 21:35:53.438"></status>
+<status status="PASS" endtime="20180909 16:37:28.346" critical="yes" starttime="20180909 16:37:27.505"></status>
 </test>
 <kw type="teardown" name="Close Browsers">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20180908 21:35:56.626" starttime="20180908 21:35:54.251"></status>
+<status status="PASS" endtime="20180909 16:37:30.701" starttime="20180909 16:37:28.349"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:56.626" starttime="20180908 21:35:54.251"></status>
+<status status="PASS" endtime="20180909 16:37:30.702" starttime="20180909 16:37:28.348"></status>
 </kw>
-<status status="PASS" endtime="20180908 21:35:56.626" starttime="20180908 21:35:47.034"></status>
+<status status="PASS" endtime="20180909 16:37:30.702" starttime="20180909 16:37:14.476"></status>
 </suite>
 <statistics>
 <total>
